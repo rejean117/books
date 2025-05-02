@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rejean And Shen Website</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url('handsome.png'); /* One background */
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .search-container {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 5px 10px;
+      background: transparent;
+    }
+
+    .search-container input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 8px 12px;
+      border-radius: 50px;
+      font-size: 14px;
+      width: 260px;
+      background: transparent;
+      color: white;
+    }
+
+    .search-container input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .search-container button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+
+    .search-container button:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .search-container button img {
+      width: 30px;  
+      height: 30px;
+      
+      background-color: #f2e4d7;
+      border-radius: 20px;
+    }
+
+    .content-wrapper {
+      position: absolute;
+      top: 10%;
+      left: 55%;
+      transform: translateX(-50%);
+      padding: 30px;
+      background-color: rgba(63, 65, 141, 0.5); 
+      border-radius: 5%;
+      width: 70%; 
+      height: auto;
+      color: white; 
+    }
+
+    .content-wrapper h1 {
+      text-align: left;
+      font-size: 2rem;
+      background-color: #f2e4d7;
+      border-radius: 50px;
+      padding: 10px 70px;
+      width: fit-content;
+      color: #3f418d;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .book-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .book-cover {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .book-synopsis {
+      flex: 1;
+      padding: 20px;
+      background-color: rgba(91, 100, 164, 0.9);
+      border-radius: 15px;
+    }
+
+    .book-synopsis h2 {
+      margin-top: 0;
+      font-family: 'Times New Roman', Times, serif;
+      color: #f2e4d7;
+    }
+
+    .book-synopsis p {
+      font-size: 1.1rem;
+    }
+
+    .sidebar {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding:50px;
+}
+
+.sidebar img {
+  width: 90px;  /* adjust size */
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-color: #f2e4d7;
+  border-radius: 10px;
+}
+
+.sidebar img:hover {
+  transform: scale(1.1); 
+}
+
+
+  </style>
+</head>
+<body>
+
+  <form class="search-container" action="search.html" method="get">
+    <input type="text" name="query" placeholder="Search...">
+    <button type="submit"><img src="search-icon.png" alt="Search"></button> <!-- Naa diri ang name sa image sa search icon -->
+  </form>
+
+  <div class="content-wrapper">
+    <h1>On Going</h1>
+
+    <div class="book-section"> <!-- 1st Libro --><!-- book1, book2.jpg/png ang name -->
+      <img src="possesive11.png" alt="Book Cover" class="book-cover">
+      <div class="book-synopsis">
+        <h2>Knock Knock Professor</h2>
+        <p>
+            Synopsis: The story follows Xildius Vouganville, known as XV, a brilliant professor who solves mysterious cases using his expertise in anatomy and psychology. Due to a unique condition, he remains confined within his mansion, Villa Vouganville. Fift Salustiana, enticed by a lucrative salary advertised on a flyer, becomes his new assistant. As she delves into her role, Fift uncovers the peculiar nature of XV's profession and finds herself drawn to the intense allure he exudes. The narrative explores whether Fift can bring light into the professor's shadowed existence.
+            </p>
+      </div>
+    </div>
+
+    <div class="book-section"> <!-- 2nd Libro -->
+        <img src="possesive12.png" alt="Book Cover" class="book-cover">
+        <div class="book-synopsis">
+          <h2>Knock Knock Professor</h2>
+          <p>
+            Synopsis: The story follows Xildius Vouganville, known as XV, a brilliant professor who solves mysterious cases using his expertise in anatomy and psychology. Due to a unique condition, he remains confined within his mansion, Villa Vouganville. Fift Salustiana, enticed by a lucrative salary advertised on a flyer, becomes his new assistant. As she delves into her role, Fift uncovers the peculiar nature of XV's profession and finds herself drawn to the intense allure he exudes. The narrative explores whether Fift can bring light into the professor's shadowed existence.
+            </p>
+        </div>
+      </div>
+
+      <div class="book-section"> <!-- 3rd Libro -->
+        <img src="book1.jpg" alt="Book Cover" class="book-cover">
+        <div class="book-synopsis">
+          <h2>Knock Knock Professor</h2>
+          <p>
+            Synopsis: The story follows Xildius Vouganville, known as XV, a brilliant professor who solves mysterious cases using his expertise in anatomy and psychology. Due to a unique condition, he remains confined within his mansion, Villa Vouganville. Fift Salustiana, enticed by a lucrative salary advertised on a flyer, becomes his new assistant. As she delves into her role, Fift uncovers the peculiar nature of XV's profession and finds herself drawn to the intense allure he exudes. The narrative explores whether Fift can bring light into the professor's shadowed existence.
+            </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="sidebar">
+    <a href="home.html"><img src="home.png" alt="Home"></a>  <!--Naa diri ang name sa html links and images -->
+    <a href="On going.html"><img src="write.png" alt="On going"></a>  <!-- Ilisi lang href base sa ngan sa html name file (ex: coverpage.html) -->
+    <a href="Check.html"><img src="check.png" alt="check"></a> 
+    <a href="Shop.html"><img src="cart.png" alt="Shop"></a>
+  </div>
+  
+  
+
+</body>
+</html>
